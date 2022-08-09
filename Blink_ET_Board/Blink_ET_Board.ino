@@ -15,7 +15,7 @@ void setup() {
 void loop() {
   digitalWrite(D2, HIGH); // LED를 켬
   delay(1000);            // 1초 기다림
-  digitalWrite(D2, LOW);  // LED를 켬
+  digitalWrite(D2, LOW);  // LED를 끔
   delay(1000);            // 1초 기다림
   }
 

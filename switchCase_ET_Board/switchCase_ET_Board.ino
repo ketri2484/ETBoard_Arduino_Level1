@@ -12,12 +12,11 @@ const int sensorMin = 0;                                      // 최소값 설�
 const int sensorMax = 2400;                                   // 최대값 설정
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() {
-  int sensorReading = analogRead(A0);                         // 아날로그 센서 값 읽어서 변수에 저장
-  
+  int sensorReading = analogRead(A0);                         // 아날로그 센서 값 읽어서 변수에 저장  
   int range = map(sensorReading, sensorMin, sensorMax, 0, 3); // 0~2400까이 사이에서 4개의 범위 정하기
 
   switch (range) {                                            // 범위(0~3)마다 단어 설정하기

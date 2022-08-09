@@ -9,22 +9,26 @@
 ******************************************************************************************/
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   while (!Serial) {
     ;                                            // 연결 기다림
   }
 
-  Serial.println("ASCII Table ~ Character Map"); // 'ASCII Table ~ Character Map'출력
+  Serial.println("ASCII Table ~ Character Map");
+  // 'ASCII Table ~ Character Map'출력
+  Serial.println("5초 후에 출력됩니다.");
+  // '5초 후에 출력됩니다'출력
+  delay(5000);
 }
 
 int thisByte = 33;                               // '!' 느낌표는 아스키코드 33번
 
 void loop() {
   Serial.write(thisByte);                        // '!' 출력
+  
   Serial.print(", dec: ");                       // ', dec: '출력
-
   Serial.print(thisByte);                        // '33' 출력
-
+  
   Serial.print(", hex: ");                       // ', hex: '출력
   Serial.print(thisByte, HEX);                   // 16진수로 된 33 출력
  
@@ -34,7 +38,7 @@ void loop() {
   Serial.print(", bin: ");                       // ', bin: '출력
   Serial.println(thisByte, BIN);                 // 2진수로 된 33출력
   
-  if (thisByte == 126) {                         // 126번이 되면      
+  if(thisByte == 126) {                         // 126번이 되면      
     while (true) {
       continue;                                  // 멈춤
     }  

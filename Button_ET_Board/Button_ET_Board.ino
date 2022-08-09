@@ -8,10 +8,9 @@
  * Modified     : 2022.04.21 : LEH : 헤더 수정, 소스 크린징
 ******************************************************************************************/
 
-const char buttonPin = D6;                   // 빨강 버튼 : 15번
-const char ledPin = D2;                      // 빨강 LED : 27번
-
-                                             // variables will change:
+const char buttonPin = D6;                   // 빨강 버튼 : D6
+const char ledPin = D2;                      // 빨강 LED : D2
+                                            // variables will change:
 int buttonState = 0;                         // 빨강 버튼 상태를 0으로 초기화
 
 void setup() {
@@ -22,10 +21,10 @@ void setup() {
 void loop() {
   buttonState = digitalRead(buttonPin);      // 빨강 버튼 값 읽기
 
-  if (buttonState == LOW) {
-    digitalWrite(ledPin, LOW);              // 버튼을 누르지 않으면 LED가 켜짐
-  } else { 
-     digitalWrite(ledPin,HIGH);              // 버튼을 누르면 LED가 꺼짐
+  if(buttonState == LOW) {
+    digitalWrite(ledPin, LOW);              // 버튼을 누르면 LED가 꺼짐
+  } else{ 
+     digitalWrite(ledPin,HIGH);              // 버튼을 누르지 않으면 LED가 켜짐
   }
 }
 
