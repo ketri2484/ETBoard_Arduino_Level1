@@ -6,6 +6,7 @@
  * Created Date : 2022.04.21
  * Reference    : 
  * Modified     : 2022.04.21 : LEH : 헤더 수정, 소스 크린징
+ * Modified     : 2023.03.14 : PEJ : 주석 길이 수정
 ******************************************************************************************/
 
 const int numReadings = 10;
@@ -29,7 +30,7 @@ void loop() {
   total = total - readings[readIndex];          // 가장 오래된 값을 빼줌
   readings[readIndex] = analogRead(inputPin);   // 센서 값을 읽어옴
   total = total + readings[readIndex];          // 읽어온 값을 총합에 더해줌
-  readIndex = readIndex + 1;                    // 배열에서 다음 순번으로 처리하기 위해 차례를 넘김
+  readIndex = readIndex + 1;                    // 다음 순번 처리를 위해 차례를 넘김
 
   if(readIndex >= numReadings) {               // 배열 값이 지정된 값보다 커지면
     readIndex = 0;                              // 처음 배열 값으로 돌아감
