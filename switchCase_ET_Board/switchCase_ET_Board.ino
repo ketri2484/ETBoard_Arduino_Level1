@@ -7,48 +7,38 @@
  * Reference    : 
  * Modified     : 2022.04.21 : LEH : 헤더 수정, 소스 크린징
  * Modified     : 2023.03.14 : PEJ : 주석 길이 수정
+ * Modified     : 2023.03.21 : PEJ : 주석 위치 및 내용 수정
 ******************************************************************************************/
 
-// 최소값 설정
-const int sensorMin = 0;
-// 최대값 설정                                  
-const int sensorMax = 2400;                               
+const int sensorMin = 0;                // 최소값 설정
+const int sensorMax = 2400;             // 최대값 설정                    
 
 void setup() {
   Serial.begin(115200);
 }
 
 void loop() {
-  // 아날로그 값을 변수에 저장 
-  int sensorReading = analogRead(A0);                      
-  // 0~2400 사이에서 4개의 범위 정하기
+   int sensorReading = analogRead(A0);  // 가변저항 'A0' 핀의 아날로그 값을 변수에 저장                     
+  // sensorMin(0)부터 sensorMax(2400)까지의 값을 4개의 구간으로 나누어 대응시키기
   int range = map(sensorReading, sensorMin, sensorMax, 0, 3);
 
-  // 범위(0~3)마다 단어 설정하기
-  switch (range) {                                        
-    // your hand is on the sensor
-    case 0:  
-      // 범위 0 이면 매우 작다 출력                                             
+  
+  switch (range) {                      // 범위(0~3)에 따라 맞는 크기의 문자열 출력
+    case 0:                             // 가변저항의 값이 0 구간에 속할 때 "매우 작다" 출력
       Serial.println("매우 작다");                         
       break;
-    // your hand is close to the sensor
-    case 1:                                               
-      // 범위 1 이면 작다 출력
+    case 1:                             // 가변저항의 값이 1 구간에 속할 때 "작다" 출력
       Serial.println("작다");                             
       break;
-    // your hand is a few inches from the sensor
-    case 2: 
-      // 범위 2 이면 크다 출력                                              
+    case 2:                             // 가변저항의 값이 2 구간에 속할 때 "크다" 출력                                              
       Serial.println("크다");                                  
       break;
-    // your hand is nowhere near the sensor
-    case 3:         
-      // 범위 3 이면 매우 크다 출력                                          
+    case 3:                             // 가변저항의 값이 3 구간에 속할 때 "매우 크다" 출력                                          
       Serial.println("매우 크다");                             
       break;
   }
-  // 0.001초 기다리기
-  delay(1);                                                   
+
+  delay(1);                             // 0.001초 기다리기                                              
 }
 
 //==========================================================================================
