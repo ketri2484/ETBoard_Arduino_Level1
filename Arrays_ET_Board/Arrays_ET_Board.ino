@@ -1,11 +1,12 @@
 /******************************************************************************************
- * FileName     : ASCIITable_ET_Board.ino
+ * FileName     : Arrays_ET_Board.ino
  * Description  : 배열을 이용하여 LED 제어하기
  * Hardware     : ETBoard(이티보드, ESP32 등록 공식 Arduino Board)
  * Author       : 한국공학기술연구원(KETRI)
  * Created Date : 2022.04.21
  * Reference    : 
  * Modified     : 2023.03.18 : PEJ : 헤더 주석 및 푸터 주석 추가
+ * Modified     : 2023.04.03 : PEJ : 헤더 주석 FileName 변경
 ******************************************************************************************/
 int timer = 500;  // LED 점등 시간(0.5초)
 int ledPins[] = { 
