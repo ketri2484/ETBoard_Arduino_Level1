@@ -1,6 +1,6 @@
 /******************************************************************************************
  * FileName     : SwitchCase_ET_Board.ino
- * Description  : map() 함수를 이용하여 LED 제어하기
+ * Description  : map() 함수를 이용하여 범위 출력하기
  * Hardware     : ETBoard(이티보드, ESP32 등록 공식 Arduino Board)
  * Author       : 한국공학기술연구원(KETRI)
  * Created Date : 2022.04.21
@@ -8,6 +8,7 @@
  * Modified     : 2022.04.21 : LEH : 헤더 수정, 소스 크린징
  * Modified     : 2023.03.14 : PEJ : 주석 길이 수정
  * Modified     : 2023.03.21 : PEJ : 주석 위치 및 내용 수정
+ * Modified     : 2023.04.04 : PEJ : 주석 Description 수정
 ******************************************************************************************/
 
 const int sensorMin = 0;                // 최소값 설정
