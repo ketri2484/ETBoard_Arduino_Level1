@@ -19,7 +19,7 @@ void setup() {
 }
 
 void loop() {
-   int sensorReading = analogRead(A0);  // 가변저항 'A0' 핀의 아날로그 값을 변수에 저장                     
+  int sensorReading = analogRead(A0);  // 가변저항 'A0' 핀의 아날로그 값을 변수에 저장                     
   // sensorMin(0)부터 sensorMax(2400)까지의 값을 4개의 구간으로 나누어 대응시키기
   int range = map(sensorReading, sensorMin, sensorMax, 0, 3);
 
