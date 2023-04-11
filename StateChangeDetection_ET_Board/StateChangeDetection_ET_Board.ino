@@ -25,14 +25,14 @@ void loop() {
   buttonState = digitalRead(buttonPin);          // 버튼 상태 값 읽기
 
   if(buttonState != lastButtonState) {          // 현재 버튼상태가 마지막 상태 아니라면
-    if(buttonState == HIGH) {                   // 버튼상태가 HIGH이면
+    if(buttonState == LOW) {                    // 버튼상태가 LOW이면
       buttonPushCounter++;                       // 버튼 누른 수 증가
       Serial.println("on");                      // 'on' 출력
       Serial.print("number of button pushes: "); // 'number of button pushes: ' 출력
       Serial.println(buttonPushCounter);         // 버튼 누른수 출력
     } else{                                     // 버튼상태가 HIGH가 아니라면
       
-      Serial.println("off");                     // 'off' 출력
+      Serial.println("off\n");                     // 'off' 출력
     }
     
     delay(50);                                   // 0.05초 기다리기
