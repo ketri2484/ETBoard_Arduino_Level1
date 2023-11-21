@@ -1,6 +1,6 @@
 /******************************************************************************************
  * FileName     : 03._led_all_blink.Ex
- * Description  : 모든 LED 켰다 껐다 해보기
+ * Description  : 모든 LED 켰다 껐다 해 보기
  * Author       : 오경석
  * Created Date : 2023.10.24
  * Reference    :

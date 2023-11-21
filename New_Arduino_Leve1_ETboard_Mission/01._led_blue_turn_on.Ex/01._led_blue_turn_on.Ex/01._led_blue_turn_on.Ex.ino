@@ -1,6 +1,6 @@
 /******************************************************************************************
  * FileName     : 01._led_blue_turn_on.Ex
- * Description  : 파랑 LED 켜보기
+ * Description  : 파랑 LED 켜 보기
  * Author       : 오경석
  * Created Date : 2023.10.24
  * Reference    :
