@@ -33,12 +33,12 @@ void loop() {
   int button_green_value = digitalRead(button_green);        // 초록 버튼의 값을 저장
   int button_yellow_value = digitalRead(button_yellow);      // 노랑 버튼의 값을 저장
 
-  if (button_red_value == LOW ) {                            // 초록 버튼의 값이 LOW라면
+  if (button_red_value == LOW ) {                            // 빨강 버튼의 값이 LOW라면
     // 시리얼 모니터에 "빨강 버튼이 눌림" 출력
     Serial.println("빨강 버튼이 눌림");
   }
 
-  if (button_blue_value == LOW) {                            // 노랑 버튼의 값이 LOW라면
+  if (button_blue_value == LOW) {                            // 파랑 버튼의 값이 LOW라면
     // 시리얼 모니터에 "파랑 버튼이 눌림" 출력
     Serial.println("파랑 버튼이 눌림");
   }

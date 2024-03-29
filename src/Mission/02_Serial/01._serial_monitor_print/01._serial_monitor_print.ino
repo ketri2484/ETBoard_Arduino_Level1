@@ -16,7 +16,7 @@ void setup() {
 
 // main loop
 void loop() {
-  Serial.println("뽀삐");   // 큰따옴표 사이에 반려동물 이름을 작성해 주세요.
+  Serial.println("puppy_name"); // 큰따옴표 사이에 반려동물 이름을 작성해 주세요.
   delay(1000);                  // 1초 기다리기
 }
 

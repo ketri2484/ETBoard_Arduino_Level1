@@ -34,8 +34,8 @@ void setup() {
 
 // main loop
 void loop() {
-  int button_red_value = digitalRead(button_red);   // 빨강 버튼 상태 값 저장
-  int button_blue_value = digitalRead(button_blue); // 파랑 버튼 상태 값 저장
+  int button_red_value = digitalRead(button_red);   // 빨강 버튼 값 저장
+  int button_blue_value = digitalRead(button_blue); // 파랑 버튼 값 저장
 
   if (button_red_value == LOW) {                    // 빨강 버튼의 값이 LOW라면
     digitalWrite(led_red, HIGH);                    // 빨강 LED 켜기

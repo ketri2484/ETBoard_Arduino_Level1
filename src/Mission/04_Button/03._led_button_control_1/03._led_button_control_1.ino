@@ -16,7 +16,7 @@ int button_blue = D7;                               // 파랑 버튼 핀 지정
 
 // setup
 void setup() {
-  pinMode(led_blue, OUTPUT);                        //  파랑 LED를 출력 모드로 설정
+  pinMode(led_blue, OUTPUT);                        // 파랑 LED를 출력 모드로 설정
 
   pinMode(button_blue, INPUT);                      // 파랑 버튼을 입력 모드로 설정
 
