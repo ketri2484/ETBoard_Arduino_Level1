@@ -21,19 +21,19 @@ void setup() {
 
 // main loop
 void loop() {
-  if (score >= 90) {                             // score의 값이 90보다 같거나 크다면
+  if (score >= 90) {                             // score의 값이 90보다 크거나 같다면
     Serial.println("성적은 A입니다.");           // 시리얼 모니터에 "성적은 A입니다." 출력
     delay(1000);                                 // 1초 기다리기
   }
-  else if (score >= 80) {                        // score의 값이 80보다 같거나 크다면
+  else if (score >= 80) {                        // score의 값이 80보다 크거나 같다면
     Serial.println("성적은 B입니다.");           // 시리얼 모니터에 "성적은 B입니다." 출력
     delay(1000);                                 // 1초 기다리기
   }
-  else if (score >= 70) {                        // score의 값이 70보다 같거나 크다면
+  else if (score >= 70) {                        // score의 값이 70보다 크거나 같다면
     Serial.println("성적은 C입니다.");           // 시리얼 모니터에 "성적은 C입니다." 출력
     delay(1000);                                 // 1초 기다리기
   }
-  else if (score >= 60) {                        // score의 값이 60보다 같거나 크다면
+  else if (score >= 60) {                        // score의 값이 60보다 크거나 같다면
     Serial.println("성적은 D입니다.");           // 시리얼 모니터에 "성적은 D입니다." 출력
     delay(1000);                                 // 1초 기다리기
   }

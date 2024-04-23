@@ -33,7 +33,7 @@ void loop() {
     // 시리얼 모니터에 "빨강 버튼이 눌림" 출력
     Serial.println("빨강 버튼이 눌림");
   }
-  else {                                            // 빨강 버튼의 값이 LOW가 아니라면
+  else {                                            // 빨강 버튼의 값이 LOW가 아니면
     digitalWrite(led_red, LOW);                     // 빨강 LED 끄기
     // 시리얼 모니터에 "빨강 버튼이 눌리지 않음" 출력
     Serial.println("빨강 버튼이 눌리지 않음");
